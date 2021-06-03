@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+   
+    
+    var codigoCombustivel = prompt(`Digite o codigo do combustível. 1 para Álcool' ou 2 para Gasolina`)
+
+    if ( codigoCombustivel == 1 || codigoCombustivel == 2){
+        var quantidade = prompt("Digite a quantidade desejada")
+    }else{
+        alert("Código não existente. Por favor digite o código correto (1 ou 2)")
+    }
+
+    var preco
+    if ( codigoCombustivel == 1){
+        preco = 3.16
+    }else{
+        if(codigoCombustivel == 2){
+            preco = 4.19
+        }
+    }
+
+    var total = preco * quantidade
+
+    document.write (`O código digitado foi: ${codigoCombustivel}
+                    A quantidade de litros foram: ${quantidade}
+                    O total é de: ${total}`)
+    
+
+    
+
+    
+    
+    </script>
+</body>
+</html>
